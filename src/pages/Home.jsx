@@ -1,8 +1,9 @@
+import UnderConstruction from "./UnderConsntruction";
+
 const Home = () => {
     return (
       <div>
-        <h1>Página de Inicio</h1>
-        <p>Bienvenido a mi portafolio.</p>
+        <UnderConstruction></UnderConstruction>
       </div>
     );
   };
