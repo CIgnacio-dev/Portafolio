@@ -3,6 +3,7 @@ import { Button, Box, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import ParticlesBackground from "./ParticlesBackground";
 
 const UnderConstruction = () => {
   const { t } = useTranslation();
@@ -27,7 +28,7 @@ const UnderConstruction = () => {
         
       }}
     >
-    
+    <ParticlesBackground />
     <LanguageSwitcher />
    
       <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
