@@ -1,0 +1,32 @@
+{
+  "welcome": "Is this my portfolio? Yes",
+  "description": "Here you will find my projects, skills, and experience.",
+  "nav": {
+    "home": "HOME",
+    "projects": "PROJECTS",
+    "about": "ABOUT ME",
+    "contact": "CONTACT"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "react": "React",
+    "mui": "Material UI"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "I am a frontend developer passionate about building interactive and dynamic user experiences.",
+    "details": "I specialize in JavaScript, React, and modern web technologies. My goal is to create intuitive and high-performance web applications."
+  },
+    "contact": {
+    "title": "Contact",
+    "description": "Do you have any questions or proposals? Send me a message!",
+    "name": "Name *",
+    "email": "Email *",
+    "message": "Message *",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sent": "Message sent successfully!",
+    "error": "An error occurred while sending the message, please try again."
+  }
+
+}

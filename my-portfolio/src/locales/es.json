@@ -1,0 +1,28 @@
+{
+    "welcome": "¿Esto es mi portafolio? Sí",
+    "description": "Aquí encontrarás sobre mis proyectos, habilidades y experiencia",
+    "nav": {
+      "home": "INICIO",
+      "projects": "PROYECTOS",
+      "about": "SOBRE MÍ",
+      "contact": "CONTACTO"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "intro": "Soy un desarrollador frontend apasionado por la creación de experiencias interactivas y dinámicas.",
+      "details": "Me especializo en JavaScript, React y tecnologías web modernas. Mi objetivo es crear aplicaciones web intuitivas y de alto rendimiento."
+    },
+      "contact": {
+      "title": "Contacto",
+      "description": "¿Tienes alguna pregunta o propuesta? ¡Envíame un mensaje!",
+      "name": "Nombre *",
+      "email": "Correo Electrónico *",
+      "message": "Mensaje *",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "sent": "Mensaje enviado con éxito!",
+      "error": "Hubo un error al enviar el mensaje, intenta de nuevo."
+    }
+    
+  }
+  
