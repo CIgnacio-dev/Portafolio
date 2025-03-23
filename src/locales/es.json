@@ -22,7 +22,14 @@
       "sending": "Enviando...",
       "sent": "Mensaje enviado con éxito!",
       "error": "Hubo un error al enviar el mensaje, intenta de nuevo."
-    }
+    },
+      "construction": {
+        "title": "Página en construcción",
+        "description": "Estoy trabajando en algo genial. Mientras tanto, visita mi GitHub.",
+        "github": "Ir a mi GitHub"
+      }
+    
+    
     
   }
   

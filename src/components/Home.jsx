@@ -13,28 +13,28 @@ const Home = () => {
         flexDirection: "column",
         alignItems: "center", 
         justifyContent: "center",
-        height: "100vh",  // 🔥 Ocupar el 100% sin expandirse
+        height: "100vh",  
         width: "100%", 
         textAlign: "center",
-        overflow: "hidden",  // 🔥 Evitar scroll
+        overflow: "hidden",  
         position: "relative",
       }}
     >
-      {/* 🔥 Contenedor de idiomas (Arriba a la derecha) */}
+     
       <Box
         sx={{
           position: "absolute",
-          top: "10px", // 🔥 Reducir margen superior
-          right: "10px", // 🔥 Asegurar que no sobresalga
+          top: "10px", 
+          right: "10px", 
           display: "flex",
           gap: "8px",
-          zIndex: 10, // 🔥 Asegurar que no se esconda detrás de otros elementos
+          zIndex: 10, 
         }}
       >
         
       </Box>
 
-      {/* 🔥 Título con animación */}
+     
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const Home = () => {
         <Typography
   variant="h2"
   sx={{
-    fontSize: { xs: "2rem", md: "4rem" }, // 🔥 2rem en móviles, 4rem en escritorio
+    fontSize: { xs: "2rem", md: "4rem" }, 
     color: "#00D4FF",
     fontWeight: "bold",
   }}
@@ -52,14 +52,14 @@ const Home = () => {
 </Typography>
       </motion.div>
 
-      {/* 🔥 Descripción */}
+      {/*  Descripción */}
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
         <Typography variant="h5" sx={{ color: "white", maxWidth: "600px", mb: 3 }}>
           {t("home.description", "Desarrollador Frontend especializado en React, JavaScript y tecnologías web modernas.")}
         </Typography>
       </motion.div>
 
-      {/* 🔥 Botón de Ver Proyectos */}
+      {/*  Botón de Ver Proyectos */}
       <motion.div whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }}>
         <Button
           variant="contained"

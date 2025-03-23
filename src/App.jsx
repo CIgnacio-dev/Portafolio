@@ -5,75 +5,47 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { Button, Box, Select, MenuItem, useMediaQuery } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import UnderConstruction from "./components/UnderConstruction";
+import LanguageSwitcher from "./components/LanguageSwitcher"; 
 import "./i18n";
 
 const App = () => {
-  const { i18n } = useTranslation();
-  const isMobile = useMediaQuery("(max-width: 768px)"); 
-
   return (
     <Router>
-      <div style={{ display: "flex", backgroundColor: "#111", minHeight: "100vh", color: "white" }}>
+      <div
+        style={{
+          display: "flex",
+          backgroundColor: "#111",
+          minHeight: "100vh",
+          color: "white",
+        }}
+      >
         <Sidebar />
-        <main style={{ flex: 1, textAlign: "center", padding: "50px", position: 'relative' }}>
-          
-          
-          <Box
-            sx={{
+
+        <main
+          style={{
+            flex: 1,
+            textAlign: "center",
+            padding: "50px",
+            position: "relative",
+          }}
+        >
+          {/* Botón de cambio de idioma */}
+          <div
+            style={{
               position: "absolute",
               top: "10px",
               right: "20px",
               zIndex: 10,
             }}
           >
-            {isMobile ? (
-              <Select
-                value={i18n.language}
-                onChange={(e) => i18n.changeLanguage(e.target.value)}
-                sx={{
-                  color: "white",
-                  backgroundColor: "#222",
-                  borderRadius: "5px",
-                  fontSize: "14px",
-                  '& .MuiSelect-icon': { color: "white" },
-                  '& .MuiOutlinedInput-notchedOutline': { borderColor: "white" },
-                }}
-              >
-                <MenuItem value="en">US English</MenuItem>
-                <MenuItem value="es">🇪🇸 Español</MenuItem>
-              </Select>
-            ) : (
-              <Box sx={{ display: "flex", gap: "10px" }}>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    color: i18n.language === "en" ? "#00D4FF" : "white",
-                    borderColor: "white",
-                    padding: "5px 10px",
-                    fontWeight: i18n.language === "en" ? "bold" : "normal",
-                  }}
-                  onClick={() => i18n.changeLanguage("en")}
-                >
-                  US English
-                </Button>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    color: i18n.language === "es" ? "#00D4FF" : "white",
-                    borderColor: "white",
-                    padding: "5px 10px",
-                    fontWeight: i18n.language === "es" ? "bold" : "normal",
-                  }}
-                  onClick={() => i18n.changeLanguage("es")}
-                >
-                  🇪🇸 Español
-                </Button>
-              </Box>
-            )}
-          </Box>
+            <LanguageSwitcher />
+          </div>
 
+          {/* Página principal en construcción */}
+          <UnderConstruction />
+
+          {/* Rutas futuras */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
