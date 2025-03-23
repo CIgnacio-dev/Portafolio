@@ -28,11 +28,11 @@
     "sent": "Message sent successfully!",
     "error": "An error occurred while sending the message, please try again."
   },
-    "construction": {
-      "title": "Page Under Construction",
-      "description": "I'm working on something awesome. Meanwhile, check my GitHub!",
-      "github": "Visit my GitHub"
-    }
+    "under": {
+    "title": " Page Under Construction",
+    "description": "I'm working on something great. Meanwhile, visit my GitHub.",
+    "button": "Visit my GitHub"
+  }
   
 
 }

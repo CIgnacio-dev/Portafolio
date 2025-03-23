@@ -1,52 +1,52 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Button, Box, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ParticlesBackground from "./ParticlesBackground";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const UnderConstruction = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-  };
+  const { t } = useTranslation();
 
   return (
+    
     <Box
       sx={{
-        minHeight: "100vh",
-        bgcolor: "#111",
+        position: "fixed", 
+        top: { xs: 10, sm: 20 },
+        left: 0,
+        width: "100%",
+        height: "100%",
+        bgcolor: "#111", 
         color: "white",
+        zIndex: 9999, 
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        flexDirection: "column",
         textAlign: "center",
-        position: "relative",
-        overflow: "hidden"
+        
       }}
     >
-      <ParticlesBackground />
-
-     
-
-      {/* Contenido principal */}
-      <Typography variant="h3" sx={{ mb: 2, fontWeight: "bold", zIndex: 1 }}>
-        🚧 {t("construction.title")}
+    
+    <LanguageSwitcher />
+   
+      <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
+        🚧 {t("under.title")}
       </Typography>
-      <Typography variant="h6" sx={{ mb: 4, maxWidth: "600px", zIndex: 1 }}>
-        {t("construction.description")}
+      <Typography variant="h6" sx={{ mb: 4 }}>
+        {t("under.description")}
       </Typography>
+      
       <Button
         variant="contained"
         color="secondary"
-        startIcon={<GitHubIcon />}
+        size="large"
         href="https://github.com/CIgnacio-dev"
         target="_blank"
-        rel="noopener"
-        sx={{ fontWeight: "bold", zIndex: 1 }}
+        startIcon={<GitHubIcon />}
+        sx={{ bgcolor: "#a020f0", "&:hover": { bgcolor: "#8b1ee0" } }}
       >
-        {t("construction.github")}
+        {t("under.button")}
       </Button>
     </Box>
   );
