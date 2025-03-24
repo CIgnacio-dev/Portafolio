@@ -9,9 +9,15 @@ import UnderConstruction from "./components/UnderConstruction";
 import LanguageSwitcher from "./components/LanguageSwitcher"; 
 import "./i18n";
 
+
+const SHOW_UNDER_CONSTRUCTION = true;
+
 const App = () => {
   return (
     <Router>
+       {SHOW_UNDER_CONSTRUCTION ? (
+      <UnderConstruction />
+    ) : (
       <div
         style={{
           display: "flex",
@@ -54,6 +60,7 @@ const App = () => {
           </Routes>
         </main>
       </div>
+      )}
     </Router>
   );
 };

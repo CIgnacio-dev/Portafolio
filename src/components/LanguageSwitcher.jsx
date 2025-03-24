@@ -7,20 +7,20 @@ const LanguageSwitcher = () => {
 
   return isMobile ? (
     <Select
-      value={i18n.language}
-      onChange={(e) => i18n.changeLanguage(e.target.value)}
-      sx={{
-        color: "white",
-        backgroundColor: "#222",
-        borderRadius: "5px",
-        fontSize: "14px",
-        '& .MuiSelect-icon': { color: "white" },
-        '& .MuiOutlinedInput-notchedOutline': { borderColor: "white" },
-      }}
-    >
-      <MenuItem value="en">US English</MenuItem>
-      <MenuItem value="es">🇪🇸 Español</MenuItem>
-    </Select>
+  value={i18n.language} 
+  onChange={(e) => i18n.changeLanguage(e.target.value)} 
+  sx={{
+    color: "white",
+    backgroundColor: "#222",
+    borderRadius: "5px",
+    fontSize: "14px",
+    '& .MuiSelect-icon': { color: "white" },
+    '& .MuiOutlinedInput-notchedOutline': { borderColor: "white" },
+  }}
+>
+  <MenuItem value="en">US English</MenuItem>
+  <MenuItem value="es">🇪🇸 Español</MenuItem>
+</Select>
   ) : (
     <Box sx={{ display: "flex", gap: "10px" }}>
       <Button
