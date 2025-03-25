@@ -1,11 +1,8 @@
 {
-  "welcome": "Is this my portfolio? Yes",
-  "description": "Here you will find my projects, skills, and experience.",
-  "nav": {
-    "home": "HOME",
-    "projects": "PROJECTS",
-    "about": "ABOUT ME",
-    "contact": "CONTACT"
+  "home": {
+    "title": "Hi, I'm Carlos Roa!",
+    "description": "Frontend developer specialized in React, JavaScript, and modern web technologies.",
+    "projects_button": "View Projects"
   },
   "skills": {
     "javascript": "JavaScript",
@@ -14,8 +11,10 @@
   },
   "about": {
     "title": "About Me",
-    "intro": "I am a frontend developer passionate about building interactive and dynamic user experiences.",
-    "details": "I specialize in JavaScript, React, and modern web technologies. My goal is to create intuitive and high-performance web applications."
+    "intro": "I'm a frontend developer with over 3 years of experience building dynamic and accessible user interfaces. I specialize in React and modern technologies, always aiming to deliver high-performance, intuitive experiences.",
+    "description": "I enjoy working in teams, collaborating with designers, and keeping my code clean and scalable. I love solving real-world problems and building impactful products.",
+    "techTitle": "Technologies I use",
+    "quote": "Building functional interfaces is only part of development — what drives me is the impact they have on people’s experiences."
   },
     "contact": {
     "title": "Contact",

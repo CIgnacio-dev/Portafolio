@@ -1,16 +1,15 @@
 {
-    "welcome": "¿Esto es mi portafolio? Sí",
-    "description": "Aquí encontrarás sobre mis proyectos, habilidades y experiencia",
-    "nav": {
-      "home": "INICIO",
-      "projects": "PROYECTOS",
-      "about": "SOBRE MÍ",
-      "contact": "CONTACTO"
-    },
+    "home": {
+    "title": "¡Hola, soy Carlos Roa!",
+    "description": "Desarrollador Frontend especializado en React, JavaScript y tecnologías web modernas.",
+    "projects_button": "Ver Proyectos"
+  },
     "about": {
-      "title": "Sobre Mí",
-      "intro": "Soy un desarrollador frontend apasionado por la creación de experiencias interactivas y dinámicas.",
-      "details": "Me especializo en JavaScript, React y tecnologías web modernas. Mi objetivo es crear aplicaciones web intuitivas y de alto rendimiento."
+      "title": "Sobre mí",
+      "intro": "Soy desarrollador frontend con más de 3 años de experiencia creando interfaces dinámicas y accesibles. Me especializo en React y tecnologías modernas, siempre buscando ofrecer una experiencia intuitiva y de alto rendimiento.",
+      "description": "Me gusta trabajar en equipo, colaborar con diseñadores y mantener un código limpio y escalable. Disfruto resolver problemas reales y construir productos con impacto.",
+      "techTitle": "Tecnologías que uso",
+      "quote": "Crear interfaces funcionales es solo una parte del desarrollo, lo que me impulsa es el impacto que estas tienen en la experiencia de las personas."
     },
       "contact": {
       "title": "Contacto",

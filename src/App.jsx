@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/SideBar";
+import DropDownNavbar from "./components/DropdownNavbar";
 import Home from "./components/Home";
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import UnderConstruction from "./components/UnderConstruction";
 import LanguageSwitcher from "./components/LanguageSwitcher"; 
+import NonTechLife from "./components/NonTechLife";
 import "./i18n";
 
 
@@ -26,7 +28,7 @@ const App = () => {
           color: "white",
         }}
       >
-        <Sidebar />
+        <DropDownNavbar />
 
         <main
           style={{
@@ -36,7 +38,7 @@ const App = () => {
             position: "relative",
           }}
         >
-          {/* Botón de cambio de idioma */}
+         
           <div
             style={{
               position: "absolute",
@@ -48,8 +50,8 @@ const App = () => {
             <LanguageSwitcher />
           </div>
 
-          {/* Página principal en construcción */}
-          <UnderConstruction />
+    
+          
 
           {/* Rutas futuras */}
           <Routes>
@@ -57,10 +59,12 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/vida-personal" element={<NonTechLife />} />
           </Routes>
+          <Footer />
         </main>
       </div>
-      )}
+       )} 
     </Router>
   );
 };

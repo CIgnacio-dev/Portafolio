@@ -28,7 +28,7 @@ const Home = () => {
           right: "10px", 
           display: "flex",
           gap: "8px",
-          zIndex: 10, 
+          zIndex: 1, 
         }}
       >
         
@@ -40,16 +40,17 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <Typography
+       <Typography
   variant="h2"
   sx={{
-    fontSize: { xs: "2rem", md: "4rem" }, 
+    fontSize: { xs: "2rem", md: "4rem" },
     color: "#00D4FF",
     fontWeight: "bold",
   }}
 >
-  ¡Hola, soy Carlos Roa!
+  {t("home.title", "¡Hola, soy Carlos Roa!")}
 </Typography>
+
       </motion.div>
 
       {/*  Descripción */}
